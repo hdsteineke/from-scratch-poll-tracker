@@ -89,3 +89,18 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+ 
+.main-section {
+    width: 90%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+}
+
+.names-form {
+    width: 60%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
