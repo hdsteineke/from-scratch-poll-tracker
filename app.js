@@ -24,6 +24,7 @@ let name1 = '';
 let name2 = ''; 
 let score1 = 0;
 let score2 = 0;
+let pastPolls = [];
 
 // set event listeners 
 makePollButton.addEventListener('click', () => {
@@ -79,6 +80,18 @@ optionTwoSubtractButton.addEventListener('click', () => {
 });
 
 resetPollButton.addEventListener('click', () => {
+
+    const currentPoll = {
+
+        title: title,
+        name1: name1,
+        name2: name2,
+        score1: score1,
+        score2: score2
+    };
+
+    pastPolls.push(currentPoll);
+
 
 });
 
