@@ -75,8 +75,7 @@ optionTwoSubtractButton.addEventListener('click', () => {
 
     refreshCurrentPoll();
 
-  // refresh the current game element with new data by calling the appropriate function
-  //refreshCurrentGameEl();
+
 });
 
 resetPollButton.addEventListener('click', () => {
@@ -92,6 +91,8 @@ resetPollButton.addEventListener('click', () => {
 
     pastPolls.push(currentPoll);
 
+    ///*****here goes a function to displayAllPolls();
+    displayAllPolls();
 
 });
 
@@ -107,9 +108,24 @@ function refreshCurrentPoll() {
 
     const pollEl = renderPoll(title, name1, name2, score1, score2);
 
+    ///**** here is where i can add classlist for styling pollEl
+
     currentPollContainer.append(pollEl);
 }
 
+
+function displayAllPolls() {
+    currentPollContainer.textContent = '';
+    pastPollsContainer.textContent = '';
+    score1 = 0;
+    score2 = 0;
+
+    for (let poll of pastPolls) {
+        const pollEl = renderPoll(poll.title, poll.name1, poll.name2, poll.score1, poll.score2);
+
+        pastPollsContainer.append(pollEl);
+    }
+}
 
   // get user input
   // use user input to update state 
