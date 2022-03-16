@@ -29,9 +29,9 @@ Additional considerations:
 
 Ze Master Plan:
 - build out HTML elements per wireframe guidance
-  - h1 for current poll title
+  - h2 for current poll title
     -  div for current poll
-      - h2 in poll (name 1, name 2)
+      - h3 in poll (name 1, name 2)
       - p tag span (votes 1, votes 2)
   - label for question
   - input for question
@@ -41,11 +41,11 @@ Ze Master Plan:
   - input 2
   - button to post poll
   - div for holding vote options (vote-here-1, vote-here-2)
-      - h2 for voting (name 1, name 2)
+      - h3 for voting (name 1, name 2)
       - button to increment
       - button to decrement
   - button to reset poll/publish to past polls
-  - h1 for past polls title
+  - h2 for past polls title
   - (div to contain published polls?)
 
 - ACP
