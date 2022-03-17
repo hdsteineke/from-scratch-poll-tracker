@@ -96,11 +96,38 @@ footer {
     display: grid;
     grid-template-columns: 50% 50%;
     height: 100%;
-}
+} 
 
 .names-form {
     width: 60%;
     text-align: center;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+}
+
+.poll {
+    border: solid 1px black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#current-poll-container {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#past-polls-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
 }

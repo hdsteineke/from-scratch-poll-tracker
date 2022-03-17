@@ -1,4 +1,4 @@
-export function renderPoll(aTitle, aName1, aName2, aScore1, aScore2) {
+export function renderPoll(aTitle, aName1, aScore1, aName2, aScore2) {
     const pollDiv = document.createElement('div');
     const titleEl = document.createElement('h3');
     const optionOneEl = document.createElement('h4');
@@ -8,11 +8,13 @@ export function renderPoll(aTitle, aName1, aName2, aScore1, aScore2) {
 
     titleEl.textContent = aTitle;
     optionOneEl.textContent = aName1;
-    optionTwoEl.textContent = aName2;
     scoreOneEl.textContent = aScore1;
+    optionTwoEl.textContent = aName2;
     scoreTwoEl.textContent = aScore2;
 
-    pollDiv.append(titleEl, optionOneEl, optionTwoEl, scoreOneEl, scoreTwoEl);
+    pollDiv.append(titleEl, optionOneEl, scoreOneEl, optionTwoEl, scoreTwoEl);
+
+    pollDiv.classList.add('.poll');
 
     return pollDiv;
 

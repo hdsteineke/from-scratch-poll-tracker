@@ -84,8 +84,8 @@ resetPollButton.addEventListener('click', () => {
 
         title: title,
         name1: name1,
-        name2: name2,
         score1: score1,
+        name2: name2,
         score2: score2
     };
 
@@ -106,7 +106,7 @@ function refreshCurrentPoll() {
     optionOneLabel.textContent = name1;
     optionTwoLabel.textContent = name2;
 
-    const pollEl = renderPoll(title, name1, name2, score1, score2);
+    const pollEl = renderPoll(title, name1, score1, name2, score2);
 
     ///**** here is where i can add classlist for styling pollEl
 
@@ -121,7 +121,7 @@ function displayAllPolls() {
     score2 = 0;
 
     for (let poll of pastPolls) {
-        const pollEl = renderPoll(poll.title, poll.name1, poll.name2, poll.score1, poll.score2);
+        const pollEl = renderPoll(poll.title, poll.name1, poll.score1, poll.name2, poll.score2);
 
         pastPollsContainer.append(pollEl);
     }
