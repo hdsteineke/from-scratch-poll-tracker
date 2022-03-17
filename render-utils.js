@@ -6,6 +6,8 @@ export function renderPoll(aTitle, aName1, aScore1, aName2, aScore2) {
     const scoreOneEl = document.createElement('p');
     const scoreTwoEl = document.createElement('p');
 
+    
+
     titleEl.textContent = aTitle;
     optionOneEl.textContent = aName1;
     scoreOneEl.textContent = aScore1;

@@ -2,12 +2,14 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: white;
+    
+    --color1: black;
+    --color2: white; 
     --color3: white;
-    --color4: white;
+    --color4: black;
     --color5: white;
     
+
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -105,7 +107,7 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
 }
 
-.poll {
+/* .poll {
     border: solid 1px black;
     text-align: center;
     display: flex;
@@ -113,6 +115,16 @@ footer {
     width: 200px;
     display: flex;
     justify-content: center;
+}
+*/
+
+.poll {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px, black;
+
+
 }
 
 #current-poll-container {
@@ -125,9 +137,12 @@ footer {
 }
 
 #past-polls-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    justify-content: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   border: 1px, black, solid;
+}
+
+.right {
+    grid-template-rows: row;
+
 }
