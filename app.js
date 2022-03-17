@@ -91,7 +91,6 @@ resetPollButton.addEventListener('click', () => {
 
     pastPolls.push(currentPoll);
 
-    ///*****here goes a function to displayAllPolls();
     displayAllPolls();
 
 });

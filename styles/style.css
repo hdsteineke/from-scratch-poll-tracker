@@ -137,9 +137,9 @@ footer {
 }
 
 #past-polls-container {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   border: 1px, black, solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px, black, solid;
 }
 
 .right {
