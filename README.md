@@ -24,3 +24,51 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+
+
+Ze Master Plan:
+- build out HTML elements per wireframe guidance
+  - h2 for current poll title
+    -  div for current poll
+      - h3 in poll (name 1, name 2)
+      - p tag span (votes 1, votes 2)
+  - label for question
+  - input for question
+  - label for input 1
+  - input 1
+  - label for input 2
+  - input 2
+  - button to post poll
+  - div for holding vote options (vote-here-1, vote-here-2)
+      - h3 for voting (name 1, name 2)
+      - button to increment
+      - button to decrement
+  - button to reset poll/publish to past polls
+  - h2 for past polls title
+  - (div to contain published polls?)
+
+- ACP
+
+- grab DOM elements:
+    - 
+    - state: current poll header, name 1, name 2, votes 1, votes 2
+
+- ACP
+
+- create event listeners (testing functionality each time):
+    - input: question
+    - inpput: 1
+    - input: 2
+    - button: submit
+    - button: increment 1
+    - button: decrement 1
+    - button: increment 2
+    - button: decrement 2
+    - button: reset/publish
+
+- ACP
+
+-write functions
+
+- ACPT
